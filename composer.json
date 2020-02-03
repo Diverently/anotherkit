@@ -3,6 +3,7 @@
     "description": "Another kirby project template",
     "type": "project",
     "keywords": ["kirby", "cms", "starterkit"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Robert Cordes",
