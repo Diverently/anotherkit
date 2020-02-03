@@ -1,0 +1,31 @@
+{
+    "name": "anotherkit",
+    "version": "1.0.0",
+    "description": "Another kirby project template",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "keywords": [
+        "kirby",
+        "cms",
+        "starterkit"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "tailwindcss": "^1.1.4",
+        "vue": "latest"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "laravel-mix": "latest",
+        "sass": "^1.25.0",
+        "sass-loader": "^8.0.2",
+        "vue-template-compiler": "^2.6.11"
+    }
+}

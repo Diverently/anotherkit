@@ -1,0 +1,21 @@
+{
+    "name": "diverently/anotherkit",
+    "description": "Another kirby project template",
+    "type": "project",
+    "keywords": ["kirby", "cms", "starterkit"],
+    "authors": [
+        {
+            "name": "Robert Cordes",
+            "email": "robert@diverently.com",
+            "homepage": "https://diverently.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "getkirby/cms": "^3.0",
+        "diverently/laravel-mix-kirby": "^1.2"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
