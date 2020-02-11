@@ -1,6 +1,6 @@
 <?php
 
-require 'kirby/bootstrap.php';
+require '../vendor/autoload.php';
 
 $kirby = new Kirby(
     [

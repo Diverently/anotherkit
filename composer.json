@@ -1,0 +1,33 @@
+{
+    "name": "diverently/anotherkit",
+    "description": "Another kirby project template",
+    "type": "project",
+    "keywords": ["kirby", "cms", "starterkit"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Cordes",
+            "email": "robert@diverently.com",
+            "homepage": "https://diverently.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "getkirby/cms": "^3.0"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "kirby-cms-path": false,
+        "kirby-plugin-path": "site/plugins"
+    },
+    "suggest": {
+        "diverently/laravel-mix-kirby": "Consider using this plugin if all your assets are versioned by Laravel Mix",
+        "getkirby/editor": "Depending on your Kirby version, this might not be necessary",
+        "omz13/kirby3-xmlsitemap": "Do yourself a favor and install this plugin",
+        "timoetting/kirby-builder": "Build pages like Lego",
+        "bnomei/kirby3-feed": "Do you have a blog? Install this",
+        "sylvainjule/matomo": "A great way to view your most important statistic inside the Kirby panel"
+    }
+}

@@ -43,8 +43,7 @@ Icon
 # Vendor files
 # ---------------
 /node_modules
-/public/vendor
-/public/kirby
+/vendor
 
 # Generated files
 # ---------------
