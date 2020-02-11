@@ -1,1 +1,15 @@
 Title: My awesome project
+
+----
+
+Seo-title: 
+
+----
+
+Seo-description: 
+
+----
+
+Seo-image:
+
+- seo_image.png

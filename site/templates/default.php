@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?= $site->title() ?></title>
-    <?php echo mix('/css/main.css') ?>
+    <?php snippet("html-head") ?>
 </head>
 <body>
-    <h1><?= $page->title() ?></h1>
+    <div class="site" id="site">
+        <header class="siteHeader"></header>
 
-    <?php echo mix('/js/main.js') ?>
+        <main class="siteMain">
+            <h1><?= $page->title() ?></h1>
+        </main>
+
+        <footer class="siteFooter"></footer>
+    </div>
+
+    <?php snippet("html-footer") ?>
 </body>
 </html>

@@ -1,3 +1,23 @@
 title: Site
-preset: pages
-unlisted: true
+
+tabs:
+  pages:
+    icon: page
+    sections:
+      pages:
+        type: pages
+
+  seo:
+    icon: search
+    columns:
+      content:
+        width: 2/3
+        fields:
+          seo: fields/seo
+      sidebar:
+        width: 1/3
+        sections:
+          pages:
+            type: pages
+          files:
+            type: files

@@ -14,7 +14,9 @@
     "require": {
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0",
-        "diverently/laravel-mix-kirby": "^1.2"
+        "diverently/laravel-mix-kirby": "^1.2",
+        "getkirby/editor": "^1.0",
+        "omz13/kirby3-xmlsitemap": "^1.2"
     },
     "config": {
         "optimize-autoloader": true
