@@ -18,13 +18,13 @@ Icon
 
 # Cache Files
 # ---------------
-/site/cache/*
-!/site/cache/index.html
+/storage/cache/*
+!/storage/cache/index.html
 
 # Accounts
 # ---------------
-/site/accounts/*
-!/site/accounts/index.html
+/storage/accounts/*
+!/storage/accounts/index.html
 
 # Plugins
 # ---------------
@@ -33,8 +33,8 @@ Icon
 
 # Sessions
 # ---------------
-/site/sessions/*
-!/site/sessions/index.html
+/storage/sessions/*
+!/storage/sessions/index.html
 
 # License
 # ---------------
@@ -43,11 +43,11 @@ Icon
 # Vendor files
 # ---------------
 /node_modules
-/vendor
-/kirby
+/public/vendor
+/public/kirby
 
 # Generated files
 # ---------------
-/assets/css
-/assets/js
-/assets/mix-manifest.json
+/public/assets/css
+/public/assets/js
+/public/assets/mix-manifest.json

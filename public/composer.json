@@ -18,5 +18,8 @@
     },
     "config": {
         "optimize-autoloader": true
+    },
+    "extra": {
+        "kirby-plugin-path": "../site/plugins"
     }
 }

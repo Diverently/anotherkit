@@ -1,19 +1,17 @@
 const mix = require("laravel-mix")
-const tailwindcss = require('tailwindcss')
 
-mix.setPublicPath("assets")
+mix.setPublicPath("public/assets")
 
 mix.browserSync({
     proxy: "anotherkit.test",
-    files: ["assets/**/*.css", "assets/**/*.js", "site/**/*.php"],
+    files: ["public/assets/**/*.css", "public/assets/**/*.js", "site/**/*.php", "content/**/*.txt"],
 })
 
 mix
     .sourceMaps()
-    .js("src/js/main.js", "assets/js")
-    .sass("src/css/main.scss", "assets/css")
+    .js("src/js/main.js", "public/assets/js")
+    .sass("src/css/main.scss", "public/assets/css")
     .options({
-        processCssUrls: false,
-        postCss: [tailwindcss('./tailwind.config.js')],
+        processCssUrls: false
     })
     .version()
