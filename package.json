@@ -41,5 +41,8 @@
     },
     "release": {
         "getLastRelease": "last-release-git"
-    }
+    },
+    "post-create-project-cmd": [
+        "npm install"
+    ]
 }
