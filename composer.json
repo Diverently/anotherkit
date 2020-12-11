@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0",
-        "getkirby/cms": "^3.0"
+        "php": ">=7.4.0",
+        "getkirby/cms": "^3.5.0-rc.6"
     },
     "config": {
         "optimize-autoloader": true
