@@ -22,8 +22,5 @@
     "extra": {
         "kirby-cms-path": false,
         "kirby-plugin-path": "site/plugins"
-    },
-    "suggest": {
-        "omz13/kirby3-xmlsitemap": "Do yourself a favor and install this plugin"
     }
 }
