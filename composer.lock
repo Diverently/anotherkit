@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "444eaf2957c1149c61384c581181db10",
+    "content-hash": "01ae5da95de73b3c3b49bd2ff9eb2bb6",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -54,6 +54,41 @@
                 }
             ],
             "time": "2020-10-30T20:47:26+00:00"
+        },
+        {
+            "name": "diverently/laravel-mix-kirby",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Diverently/laravel-mix-kirby.git",
+                "reference": "a55afcf4767cc6303ff3deffd877eef1498ae82b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Diverently/laravel-mix-kirby/zipball/a55afcf4767cc6303ff3deffd877eef1498ae82b",
+                "reference": "a55afcf4767cc6303ff3deffd877eef1498ae82b",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Cordes",
+                    "email": "robert@diverently.com"
+                }
+            ],
+            "description": "Laravel Mix helper for the Kirby CMS",
+            "support": {
+                "issues": "https://github.com/Diverently/laravel-mix-kirby/issues",
+                "source": "https://github.com/Diverently/laravel-mix-kirby/tree/1.4.0"
+            },
+            "time": "2020-08-11T09:01:16+00:00"
         },
         {
             "name": "filp/whoops",

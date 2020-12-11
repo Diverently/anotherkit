@@ -13,7 +13,8 @@
     ],
     "require": {
         "php": ">=7.4.0",
-        "getkirby/cms": "^3.5.0-rc.6"
+        "getkirby/cms": "^3.5.0-rc.6",
+        "diverently/laravel-mix-kirby": "^1.4"
     },
     "config": {
         "optimize-autoloader": true
@@ -23,12 +24,6 @@
         "kirby-plugin-path": "site/plugins"
     },
     "suggest": {
-        "diverently/laravel-mix-kirby": "Consider using this plugin if all your assets are versioned by Laravel Mix",
-        "getkirby/editor": "Depending on your Kirby version, this might not be necessary",
-        "omz13/kirby3-xmlsitemap": "Do yourself a favor and install this plugin",
-        "timoetting/kirby-builder": "Build pages like Lego",
-        "bnomei/kirby3-feed": "Do you have a blog? Install this",
-        "sylvainjule/matomo": "A great way to view your most important statistic inside the Kirby panel",
-        "reh/kirby-seo-preview-section": "A configurable and interactive SEO preview section for the panel"
+        "omz13/kirby3-xmlsitemap": "Do yourself a favor and install this plugin"
     }
 }
