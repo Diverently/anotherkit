@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dd99fd7e9f8f085d960cc800f1903af",
+    "content-hash": "17ce975d4e1e4daa46832cddf4a821a6",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -800,6 +800,40 @@
                 "psr-3"
             ],
             "time": "2019-11-01T11:05:21+00:00"
+        },
+        {
+            "name": "reh/kirby-seo-preview-section",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/REHvision/kirby-seo-preview-section.git",
+                "reference": "af825f554037dfdea6c13b86d65e573135230e28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/REHvision/kirby-seo-preview-section/zipball/af825f554037dfdea6c13b86d65e573135230e28",
+                "reference": "af825f554037dfdea6c13b86d65e573135230e28",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "seo-preview-section"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "REH.vision",
+                    "email": "kontakt@REH.vision"
+                }
+            ],
+            "description": "Configurable & interactive SEO preview section for the Kirby 3 Panel.",
+            "time": "2019-12-07T16:23:20+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

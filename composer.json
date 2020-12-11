@@ -28,6 +28,7 @@
         "omz13/kirby3-xmlsitemap": "Do yourself a favor and install this plugin",
         "timoetting/kirby-builder": "Build pages like Lego",
         "bnomei/kirby3-feed": "Do you have a blog? Install this",
-        "sylvainjule/matomo": "A great way to view your most important statistic inside the Kirby panel"
+        "sylvainjule/matomo": "A great way to view your most important statistic inside the Kirby panel",
+        "reh/kirby-seo-preview-section": "A configurable and interactive SEO preview section for the panel"
     }
 }

@@ -6,7 +6,7 @@ Seo-title:
 
 ----
 
-Seo-description: 
+Seo-description: Describe your project here
 
 ----
 

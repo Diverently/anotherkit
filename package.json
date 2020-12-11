@@ -1,6 +1,5 @@
 {
     "name": "anotherkit",
-    "version": "1.0.0",
     "description": "Another kirby project template",
     "scripts": {
         "dev": "npm run development",
@@ -20,11 +19,12 @@
         "vue": "latest"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.0.1",
-        "laravel-mix": "latest",
+        "laravel-mix": "^5.0.9",
         "sass": "^1.25.0",
         "sass-loader": "^8.0.2",
+        "semantic-release": "^17.3.0",
         "vue-template-compiler": "^2.6.11"
     }
 }

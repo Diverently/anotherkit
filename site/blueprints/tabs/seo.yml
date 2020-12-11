@@ -1,0 +1,46 @@
+icon: search
+columns:
+  content:
+    width: 2/3
+    fields:
+      seo_title:
+        label: Title
+        type: text
+        help: This will overwrite the title in the browser tab
+      seo_description:
+        label: Description
+        type: textarea
+        buttons: false
+        maxlength: 160
+        width: 2/3
+        size: medium
+        help: Search engines might use this description
+      seo_image:
+        label: Image
+        type: files
+        multiple: false
+        layout: cards
+        width: 1/3
+        help: This may be used as a preview for your page/site
+        image:
+          ratio: 1/1
+
+  sidebar:
+    width: 1/3
+    sections:
+      files:
+        type: files
+      seopreview:
+        type: seopreview
+        headline: SEO Preview
+        titleField: seo_title
+        defaultTitle: page.title
+        separator: " | "
+        baseTitle: site.title
+        descriptionField: seo_description
+        defaultDescription: site.seo_description
+      structuredinfo:
+        type: info
+        headline: Structured Data
+        text: >
+          After saving, use the (link: https://search.google.com/structured-data/testing-tool#url={{ page.url }} text: Google Structured Data Testing Tool) to verify the schema.
