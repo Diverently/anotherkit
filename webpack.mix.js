@@ -11,10 +11,8 @@ mix.browserSync({
 })
 
 mix
-    .sourceMaps()
     .js("src/js/main.js", "public/assets/js")
-    .sass("src/css/main.scss", "public/assets/css")
-    .options({
-        processCssUrls: false
-    })
+    .postCss("src/css/main.css", "public/assets/css", [
+        require("tailwindcss"),
+    ])
     .version()

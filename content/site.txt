@@ -1,12 +1,12 @@
-Title: My awesome project
+Title: Anotherkit
 
 ----
 
-Seo-title: 
+Seo-title:
 
 ----
 
-Seo-description: Describe your project here
+Seo-description: Get up and running with Kirby, Tailwind and Alpine
 
 ----
 

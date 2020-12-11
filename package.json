@@ -2,29 +2,34 @@
     "name": "anotherkit",
     "description": "Another kirby project template",
     "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "production": "mix --production"
     },
     "keywords": [
         "kirby",
         "cms",
-        "starterkit"
+        "starterkit",
+        "tailwind",
+        "tailwindcss",
+        "alpine",
+        "alpinejs"
     ],
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "vue": "latest"
+        "alpine-magic-helpers": "^0.5.1",
+        "alpinejs": "^2.7.3",
+        "autoprefixer": "^10.1.0",
+        "postcss": "^8.2.1",
+        "tailwindcss": "^2.0.2"
     },
     "devDependencies": {
         "browser-sync": "^2.26.13",
-        "browser-sync-webpack-plugin": "^2.0.1",
-        "laravel-mix": "^5.0.9",
-        "sass": "^1.25.0",
-        "sass-loader": "^8.0.2",
-        "semantic-release": "^17.3.0",
-        "vue-template-compiler": "^2.6.11"
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "laravel-mix": "^6.0.0-beta.17",
+        "semantic-release": "^17.3.0"
     }
 }

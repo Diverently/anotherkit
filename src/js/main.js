@@ -1,1 +1,2 @@
-// import Vue from "vue";
+import 'alpine-magic-helpers'
+import 'alpinejs'

@@ -3,16 +3,8 @@
 <head>
     <?php snippet("html-head") ?>
 </head>
-<body>
-    <div class="site" id="site">
-        <header class="siteHeader"></header>
-
-        <main class="siteMain">
-            <h1><?= $page->title() ?></h1>
-        </main>
-
-        <footer class="siteFooter"></footer>
-    </div>
+<body class="bg-gray-50">
+    <?php snippet("hero") ?>
 
     <?php snippet("html-footer") ?>
 </body>
