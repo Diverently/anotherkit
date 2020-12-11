@@ -1,5 +1,6 @@
 {
     "name": "anotherkit",
+    "private": true,
     "description": "Another kirby project template",
     "scripts": {
         "development": "mix",
@@ -34,7 +35,6 @@
         "last-release-git": "0.0.3",
         "semantic-release": "^17.3.0"
     },
-    "version": "0.0.0-development",
     "repository": {
         "type": "git",
         "url": "https://github.com/Diverently/anotherkit.git"
