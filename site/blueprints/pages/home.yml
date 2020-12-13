@@ -1,0 +1,11 @@
+title:
+  de: Startsete
+  en: Homepage
+preset: page
+icon: home
+options:
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+  create: false

@@ -22,5 +22,9 @@
     "extra": {
         "kirby-cms-path": false,
         "kirby-plugin-path": "site/plugins"
-    }
+    },
+    "post-create-project-cmd": [
+        "npm install",
+        "npx mix"
+    ]
 }

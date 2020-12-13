@@ -3,41 +3,87 @@ title: Site
 tabs:
   pages:
     icon: page
-    sections:
-      pages:
-        type: pages
-
-  seo:
-    icon: search
+    label:
+      de: Seiten
+      en: Pages
     columns:
-      content:
-        width: 2/3
-        fields:
-          seo_description:
-            label: Fallback Description
-            type: textarea
-            buttons: false
-            maxlength: 160
-            width: 2/3
-            size: medium
-            help: Search engines might use this description
-          seo_image:
-            label: Fallback Image
-            type: files
-            multiple: false
-            layout: cards
-            width: 1/3
-            help: This may be used as a preview for your page/site
-            image:
-              ratio: 1/1
-
-      sidebar:
-        width: 1/3
+      - width: 1/3
         sections:
-          files:
-            type: files
-          structuredinfo:
-            type: info
-            headline: Structured Data
-            text: >
-              After saving, use the (link: https://search.google.com/structured-data/testing-tool#url={{ site.url }} text: Google Structured Data Testing Tool) to verify the schema.
+          primary_pages:
+            type: pages
+            headline:
+              de: Hauptseiten
+              en: Main Pages
+            image: icon
+            templates:
+              - home
+              - about
+
+      - width: 1/3
+        sections:
+          secondary_pages:
+            type: pages
+            headline:
+              de: Weitere Seiten
+              en: Other pages
+            image: icon
+            templates:
+              - default
+
+      - width: 1/3
+        sections:
+          collection_pages:
+            type: pages
+            headline:
+              de: Sammlungen
+              en: Collections
+            image: icon
+            templates:
+              - authors
+
+  # Tab: Settings
+  settings:
+    icon: settings
+    label:
+      de: Einstellungen
+      en: Settings
+    fields:
+
+      # Section: Navigation
+      h_navigation:
+        type: headline
+        label: Navigation
+        numbered: false
+      header_navigation_links:
+        type: pages
+        label: Header Navigation
+        width: 1/2
+        image: icon
+        query: site.pages.template(['default', 'about'])
+      footer_navigation_links:
+        type: pages
+        label: Footer Navigation
+        width: 1/2
+        image: icon
+        query: site.pages.template(['default', 'about'])
+
+      # Section: Social Media
+      h_social:
+        type: headline
+        label: Social Media
+        numbered: false
+      social_url_twitter:
+        label: Twitter
+        type: url
+        icon: twitter
+        width: 1/3
+      social_url_facebook:
+        label: Facebook
+        type: url
+        icon: facebook
+        width: 1/3
+      social_url_instagram:
+        label: Instagram
+        type: url
+        icon: instagram
+        width: 1/3

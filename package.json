@@ -1,7 +1,7 @@
 {
     "name": "anotherkit",
-    "private": true,
     "description": "Another kirby project template",
+    "private": true,
     "scripts": {
         "development": "mix",
         "watch": "mix watch",
@@ -10,15 +10,6 @@
         "production": "mix --production",
         "semantic-release": "semantic-release"
     },
-    "keywords": [
-        "kirby",
-        "cms",
-        "starterkit",
-        "tailwind",
-        "tailwindcss",
-        "alpine",
-        "alpinejs"
-    ],
     "author": "",
     "license": "MIT",
     "dependencies": {
@@ -41,8 +32,5 @@
     },
     "release": {
         "getLastRelease": "last-release-git"
-    },
-    "post-create-project-cmd": [
-        "npm install"
-    ]
+    }
 }
