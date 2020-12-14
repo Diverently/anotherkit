@@ -1,6 +1,6 @@
 const mix = require("laravel-mix")
 
-mix.setPublicPath("public/assets")
+mix.setPublicPath("public")
 
 mix.options({
     processUrls: false,
