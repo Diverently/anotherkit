@@ -16,15 +16,9 @@ Icon
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
 
-# Cache Files
+# Storage Files
 # ---------------
-/storage/cache/*
-!/storage/cache/index.html
-
-# Accounts
-# ---------------
-/storage/accounts/*
-!/storage/accounts/index.html
+/storage
 
 # Plugins
 # ---------------
@@ -44,9 +38,3 @@ Icon
 # ---------------
 /node_modules
 /vendor
-
-# Generated files
-# ---------------
-/public/assets/css
-/public/assets/js
-/public/assets/mix-manifest.json
