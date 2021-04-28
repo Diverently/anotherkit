@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.4.0",
-        "getkirby/cms": "^3.5.0-rc.6",
+        "getkirby/cms": "^3.5",
         "diverently/laravel-mix-kirby": "^1.4"
     },
     "config": {

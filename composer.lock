@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01ae5da95de73b3c3b49bd2ff9eb2bb6",
+    "content-hash": "c4f312913018732e36377b8006cab57f",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -57,16 +57,16 @@
         },
         {
             "name": "diverently/laravel-mix-kirby",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Diverently/laravel-mix-kirby.git",
-                "reference": "a55afcf4767cc6303ff3deffd877eef1498ae82b"
+                "reference": "91fe17d6634083cab9417c4e9477021554851aa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Diverently/laravel-mix-kirby/zipball/a55afcf4767cc6303ff3deffd877eef1498ae82b",
-                "reference": "a55afcf4767cc6303ff3deffd877eef1498ae82b",
+                "url": "https://api.github.com/repos/Diverently/laravel-mix-kirby/zipball/91fe17d6634083cab9417c4e9477021554851aa7",
+                "reference": "91fe17d6634083cab9417c4e9477021554851aa7",
                 "shasum": ""
             },
             "require": {
@@ -86,9 +86,9 @@
             "description": "Laravel Mix helper for the Kirby CMS",
             "support": {
                 "issues": "https://github.com/Diverently/laravel-mix-kirby/issues",
-                "source": "https://github.com/Diverently/laravel-mix-kirby/tree/1.4.0"
+                "source": "https://github.com/Diverently/laravel-mix-kirby/tree/1.4.1"
             },
-            "time": "2020-08-11T09:01:16+00:00"
+            "time": "2021-04-09T12:38:46+00:00"
         },
         {
             "name": "filp/whoops",
@@ -157,16 +157,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.5.0-rc.6",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "7cc7eaaa112bdf324806822ea842f8f68c3043db"
+                "reference": "3d580d869e44496c8b145835d4bbbbe95e7559d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/7cc7eaaa112bdf324806822ea842f8f68c3043db",
-                "reference": "7cc7eaaa112bdf324806822ea842f8f68c3043db",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/3d580d869e44496c8b145835d4bbbbe95e7559d8",
+                "reference": "3d580d869e44496c8b145835d4bbbbe95e7559d8",
                 "shasum": ""
             },
             "require": {
@@ -184,15 +184,16 @@
             },
             "type": "kirby-cms",
             "autoload": {
-                "files": [
-                    "config/setup.php"
-                ],
+                "psr-4": {
+                    "Kirby\\": "src/"
+                },
                 "classmap": [
                     "dependencies/"
                 ],
-                "psr-4": {
-                    "Kirby\\": "src/"
-                }
+                "files": [
+                    "config/setup.php",
+                    "config/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -218,7 +219,13 @@
                 "issues": "https://github.com/getkirby/kirby/issues",
                 "source": "https://github.com/getkirby/kirby"
             },
-            "time": "2020-12-10T15:47:01+00:00"
+            "funding": [
+                {
+                    "url": "https://getkirby.com/buy",
+                    "type": "custom"
+                }
+            ],
+            "time": "2021-04-27T08:33:54+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -807,9 +814,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "getkirby/cms": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
