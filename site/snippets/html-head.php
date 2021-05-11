@@ -3,6 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title><?php echo $browserTitle ?></title>
 <?php echo mix("/css/main.css") ?>
+<link rel="icon" type="image/png" href="/images/favicon.png">
 
 <!-- SEO and Open Graph -->
 <meta name="description" content="">
