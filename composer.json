@@ -14,7 +14,8 @@
     "require": {
         "php": ">=7.4.0",
         "getkirby/cms": "^3.5",
-        "diverently/laravel-mix-kirby": "^1.4"
+        "diverently/laravel-mix-kirby": "^1.4",
+        "diesdasdigital/kirby-meta-knight": "^1.2"
     },
     "config": {
         "optimize-autoloader": true

@@ -1,7 +1,6 @@
 title:
   de: Startsete
   en: Homepage
-preset: page
 icon: home
 options:
   changeStatus: false
@@ -9,3 +8,31 @@ options:
   delete: false
   duplicate: false
   create: false
+
+tabs:
+  # Tab: Content
+  t_content:
+    label:
+      de: Inhalt
+      en: Content
+    columns:
+      - width: 2/3
+        sections:
+          s_content:
+            type: fields
+            fields:
+              text:
+                label: Text
+                type: blocks
+
+      - width: 1/3
+        sections:
+          s_files:
+            headline:
+              de: Dateien
+              en: Files
+            type: files
+
+
+  # Tab: SEO
+  t_seo: seo
