@@ -1,6 +1,7 @@
 const mix = require("laravel-mix")
 
 mix.setPublicPath("public")
+mix.disableSuccessNotifications()
 
 mix
     .js("src/js/main.js", "public/js")
