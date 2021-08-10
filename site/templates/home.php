@@ -5,7 +5,5 @@
 </head>
 <body class="bg-gray-50">
     <?php snippet("hero") ?>
-
-    <?php snippet("html-footer") ?>
 </body>
 </html>
