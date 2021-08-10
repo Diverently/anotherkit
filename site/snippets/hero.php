@@ -41,7 +41,7 @@
                 <div class="hidden md:flex md:space-x-10">
                     <a href="https://github.com/Diverently/anotherkit" class="font-medium text-gray-500 hover:text-gray-900">Anotherkit</a>
                     <a href="https://getkirby.com/" class="font-medium text-gray-500 hover:text-gray-900">Kirby</a>
-                    <a href="https://github.com/alpinejs/alpine#readme" class="font-medium text-gray-500 hover:text-gray-900">Alpine</a>
+                    <a href="https://alpinejs.dev/" class="font-medium text-gray-500 hover:text-gray-900">Alpine</a>
                     <a href="https://tailwindcss.com/docs" class="font-medium text-gray-500 hover:text-gray-900">Tailwind</a>
                 </div>
                 <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">

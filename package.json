@@ -3,6 +3,7 @@
     "description": "Another kirby project template",
     "private": true,
     "scripts": {
+        "start": "mix watch",
         "dev": "mix",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
@@ -13,11 +14,10 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "alpine-magic-helpers": "^1.2.1",
-        "alpinejs": "^2.8.2",
+        "alpinejs": "^3.2.3",
         "autoprefixer": "^10.1.0",
         "postcss": "^8.2.1",
-        "tailwindcss": "^2.1.2"
+        "tailwindcss": "^2.2.7"
     },
     "devDependencies": {
         "laravel-mix": "^6.0.18",
