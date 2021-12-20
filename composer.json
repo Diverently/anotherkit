@@ -7,8 +7,7 @@
     "authors": [
         {
             "name": "Robert Cordes",
-            "email": "robert@diverently.com",
-            "homepage": "https://diverently.com"
+            "email": "robert@diverently.com"
         }
     ],
     "require": {

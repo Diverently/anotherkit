@@ -1,27 +1,26 @@
 # Anotherkit
 This is a starterkit for Kirby. It sets you up with Kirby 3.5+, TailwindCSS 2.0+ and AlpineJS.
-
+<!--delete-->
 ## Installation & setup
-Start your new project with the following command:
+1. Start your new project with the following command:
+    ```
+    composer create-project diverently/anotherkit yourprojectname
+    ```
+    A new folder `yourprojectname` will be created with Kirby already setup.:
 
-```
-composer create-project diverently/anotherkit yourprojectname
-```
+2. Next, `cd` into the newly created folder and run the following command:
+    ```
+    php ./configure.php
+    ```
+    This will run a script that will replace all placeholders throughout all the files.
 
-A new folder `yourprojectname` will be created with Kirby already setup. Next, `cd` into the project and run the following two command:
+3. After everything is installed, you can run `npm start` and start coding. 🎉
 
-```
-npm install
-npx mix
-```
-
-This will install TailwindCSS and AlpineJS and run Laravel Mix to bundle everything. From there, you can follow the [Tailwind Docs](https://tailwindcss.com/docs/configuration) for setting up your project specific configuration.
+You can follow the [Tailwind Docs](https://tailwindcss.com/docs/configuration) for setting up your project specific configuration.
 
 ## Change package.json
 This starterkit includes the semantic-release package. To use it, you should change the repository in `package.json`. If you don't want to automatically version your repo, just remove the package by running `npm uninstall semantic-release last-release-git` and remove the release entry in `package.json`.
-
-You should also change the name and description in `package.json` and `composer.json`.
-
+<!--/delete-->
 ## Semantic versioning
 This starterkit uses [semantic-release](https://github.com/semantic-release/semantic-release) to automatically tag your commits. Here is an example of the release type that will be done based on a commit message (taken from their Readme):
 
