@@ -1,6 +1,6 @@
 {
-    "name": ":package_name",
-    "description": ":package_description",
+    "name": "anotherkit",
+    "description": "Another kirby project template",
     "private": true,
     "scripts": {
         "start": "mix watch",
@@ -30,7 +30,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/:vendor_slug/:package_slug"
+        "url": "https://github.com/diverently/anotherkit"
     },
     "release": {
         "getLastRelease": "last-release-git"
