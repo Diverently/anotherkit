@@ -12,20 +12,17 @@
         }
     ],
     "require": {
-        "php": ">=7.4.0",
-        "getkirby/cms": "^3.5",
+        "php": "^7.4|^8.0",
+        "getkirby/cms": "^3.6",
         "diverently/laravel-mix-kirby": "^1.4",
         "diesdasdigital/kirby-meta-knight": "^1.2"
     },
     "config": {
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "sort-packages": true
     },
     "extra": {
         "kirby-cms-path": false,
         "kirby-plugin-path": "site/plugins"
-    },
-    "post-create-project-cmd": [
-        "npm install",
-        "npx mix"
-    ]
+    }
 }

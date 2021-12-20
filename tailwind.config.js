@@ -1,7 +1,10 @@
 module.exports = {
-    mode: "jit",
-    purge: ["./src/js/**/*.js", "./site/**/*.php", "./content/**/*.txt"],
-    darkMode: false, // or 'media' or 'class'
+    content: [
+        "./src/js/**/*.js",
+        "./site/**/*.php",
+        "./content/**/*.txt",
+    ],
+    darkMode: 'media',
     theme: {
         extend: {},
     },
