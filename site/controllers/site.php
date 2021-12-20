@@ -1,14 +1,10 @@
 <?php
 
 return function ($page, $pages, $site, $kirby) {
-    $browserTitle = $site->title()->text();
-
-    if (! $page->isHomeOrErrorPage()) {
-        $pageTitle = $page->title()->text();
-        $browserTitle = "{$pageTitle} | {$browserTitle}";
-    }
+    // Set site wide variables
+    $foo = 'Bar';
 
     return [
-        'browserTitle' => $browserTitle,
+        'foo' => $foo,
     ];
 };

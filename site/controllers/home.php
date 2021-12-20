@@ -10,7 +10,8 @@ return function ($page, $pages, $site, $kirby) {
         'kirby' => $kirby,
     ]);
 
+    // Overwrite the default controller
     return A::merge($sharedControllerData, [
-        'browserTitle' => $site->title(),
+        'foo' => 'Baz',
     ]);
 };

@@ -1,15 +1,1 @@
 Title: Anotherkit
-
-----
-
-Seo-title:
-
-----
-
-Seo-description: Get up and running with Kirby, Tailwind and Alpine
-
-----
-
-Seo-image:
-
-- seo_image.png
