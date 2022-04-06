@@ -74,11 +74,11 @@ function determineSeparator(string $path): string {
 }
 
 function replaceForWindows(): array {
-    return preg_split('/\\r\\n|\\r|\\n/', run('dir /S /B * | findstr /v /i .git\ | findstr /v /i vendor | findstr /v /i '.basename(__FILE__).' | findstr /r /i /M /F:/ ":author :vendor :package Anotherkit anotherkit vendor_name vendor_slug author@domain.com"'));
+    return preg_split('/\\r\\n|\\r|\\n/', run('dir /S /B * | findstr /v /i .git\ | findstr /v /i vendor | findstr /v /i '.basename(__FILE__).' | findstr /r /i /M /F:/ ":author :vendor :package local-url Anotherkit anotherkit vendor_name vendor_slug author@domain.com"'));
 }
 
 function replaceForAllOtherOSes(): array {
-    return explode(PHP_EOL, run('grep -E -r -l -i ":author|:vendor|:package|Anotherkit|anotherkit|vendor_name|vendor_slug|author@domain.com" --exclude-dir=vendor ./* ./.github/* | grep -v ' . basename(__FILE__)));
+    return explode(PHP_EOL, run('grep -E -r -l -i ":author|:vendor|:package|local-url|Anotherkit|anotherkit|vendor_name|vendor_slug|author@domain.com" --exclude-dir=vendor ./* ./.github/* | grep -v ' . basename(__FILE__)));
 }
 
 $gitName = run('git config user.name');
@@ -121,6 +121,7 @@ foreach ($files as $file) {
         ':vendor_slug' => $vendorSlug,
         ':package_name' => $packageName,
         ':package_slug' => $packageSlug,
+        'local-url' => $folderName,
         'Anotherkit' => $packageName,
         'anotherkit' => $packageSlug,
         ':package_description' => $description,
