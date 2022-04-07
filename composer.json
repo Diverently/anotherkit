@@ -12,9 +12,10 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "getkirby/cms": "^3.6",
+        "diesdasdigital/kirby-meta-knight": "^1.2",
         "diverently/laravel-mix-kirby": "^1.4",
-        "diesdasdigital/kirby-meta-knight": "^1.2"
+        "getkirby/cms": "^3.6",
+        "getkirby/layouts": "^1.0"
     },
     "config": {
         "optimize-autoloader": true,

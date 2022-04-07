@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02c1dbeb8ed9b40be1b73e4628c98f78",
+    "content-hash": "deddbf0bcd279fe455bd6ef3d2039a11",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -330,6 +330,42 @@
                 }
             ],
             "time": "2020-12-28T12:54:39+00:00"
+        },
+        {
+            "name": "getkirby/layouts",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getkirby/layouts.git",
+                "reference": "29b743ed5cb047608566b86386acf2c22610fe8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/getkirby/layouts/zipball/29b743ed5cb047608566b86386acf2c22610fe8a",
+                "reference": "29b743ed5cb047608566b86386acf2c22610fe8a",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastian Allgeier",
+                    "email": "bastian@getkirby.com"
+                }
+            ],
+            "description": "Kirby Layouts Plugin",
+            "homepage": "https://github.com/getkirby/layouts",
+            "support": {
+                "issues": "https://github.com/getkirby/layouts/issues",
+                "source": "https://github.com/getkirby/layouts/tree/1.0.1"
+            },
+            "time": "2022-01-03T13:22:37+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
