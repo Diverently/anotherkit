@@ -24,5 +24,10 @@
     "extra": {
         "kirby-cms-path": false,
         "kirby-plugin-path": "site/plugins"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php ./configure.php"
+        ]
     }
 }
