@@ -1,11 +1,11 @@
-const mix = require("laravel-mix")
+const mix = require('laravel-mix')
 // this is only needed to make BrowserSync work with Laravel Valet and https
 const homedir = require('os').homedir()
 const domain = 'local-url.test'
 
 mix
     .disableSuccessNotifications()
-    .setPublicPath("public")
+    .setPublicPath('public')
     .options({
         processCssUrls: false,
     })
@@ -22,12 +22,17 @@ mix
             'assets/js/**/*.js',
             'site/templates/**/*.php',
             'site/snippets/**/*.php',
+            'site/layouts/**/*.php',
         ],
     })
 
+if (mix.inProduction()) {
+    mix.sourceMaps()
+}
+
 mix
-    .js("src/js/main.js", "public/js")
-    .postCss("src/css/main.css", "public/css", [
-        require("tailwindcss"),
+    .js('src/js/main.js', 'public/js')
+    .postCss('src/css/main.css', 'public/css', [
+        require('tailwindcss'),
     ])
     .version()

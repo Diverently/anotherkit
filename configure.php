@@ -137,5 +137,5 @@ foreach ($files as $file) {
     }
 }
 
-confirm('Execute `composer install` and `npm install`?') && run('composer install && npm install');
+confirm('Execute `composer install` and `npm install`?', true) && run('composer require diesdasdigital/kirby-meta-knight diverently/laravel-mix-kirby genxbe/kirby3-ray getkirby/layouts && npm install alpinejs && npm install -D tailwindcss @tailwindcss/forms autoprefixer browser-sync browser-sync-webpack-plugin laravel-mix last-release-git postcss semantic-release');
 confirm('Let this script delete itself?', true) && unlink(__FILE__);
