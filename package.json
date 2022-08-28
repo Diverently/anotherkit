@@ -18,7 +18,10 @@
     },
     "license": "MIT",
     "dependencies": {},
-    "devDependencies": {},
+    "devDependencies": {
+        "last-release-git": "^0.0.3",
+        "semantic-release": "^19.0.5"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/diverently/anotherkit"
