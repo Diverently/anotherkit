@@ -1,5 +1,7 @@
 <?php
 
+define('KIRBY_HELPER_DUMP', false);
+
 require '../vendor/autoload.php';
 
 $kirby = new Kirby(
