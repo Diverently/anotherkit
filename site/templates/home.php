@@ -1,4 +1,4 @@
-<?php layout() ?>
+<?php snippet('layouts/default', slots: true) ?>
 
 <div x-data="{ visible: false }" class="relative overflow-hidden">
     <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
@@ -117,3 +117,5 @@
         </main>
     </div>
 </div>
+
+<?php endsnippet() ?>

@@ -74,11 +74,11 @@ function determineSeparator(string $path): string {
 }
 
 function replaceForWindows(): array {
-    return preg_split('/\\r\\n|\\r|\\n/', run('dir /S /B * | findstr /v /i .git\ | findstr /v /i vendor | findstr /v /i '.basename(__FILE__).' | findstr /r /i /M /F:/ ":author :vendor :package local-url Anotherkit anotherkit vendor_name vendor_slug author@domain.com"'));
+    return preg_split('/\\r\\n|\\r|\\n/', run('dir /S /B * | findstr /v /i .git\ | findstr /v /i vendor | findstr /v /i '.basename(__FILE__).' | findstr /r /i /M /F:/ ":author :vendor :package local-url Anotherkit anotherkit Mailhog vendor_name vendor_slug author@domain.com"'));
 }
 
 function replaceForAllOtherOSes(): array {
-    return explode(PHP_EOL, run('grep -E -r -l -i ":author|:vendor|:package|local-url|Anotherkit|anotherkit|vendor_name|vendor_slug|author@domain.com" --exclude-dir=vendor ./* ./.github/* | grep -v ' . basename(__FILE__)));
+    return explode(PHP_EOL, run('grep -E -r -l -i ":author|:vendor|:package|local-url|Anotherkit|anotherkit|Mailhog|vendor_name|vendor_slug|author@domain.com" --exclude-dir=vendor ./* ./.github/* | grep -v ' . basename(__FILE__)));
 }
 
 $gitName = run('git config user.name');
@@ -135,7 +135,11 @@ foreach ($files as $file) {
     if (str_contains($file, 'README.md')) {
         removeReadmeParagraphs($file);
     }
+
+    if (str_contains($file, 'config.anotherkit.test.php')) {
+        rename($file, str_replace('config.anotherkit.test.php', 'config.' . $packageSlug . '.test.php', $file));
+    }
 }
 
-confirm('Execute `composer install` and `npm install`?', true) && run('composer require diesdasdigital/kirby-meta-knight diverently/laravel-mix-kirby genxbe/kirby3-ray getkirby/layouts && npm install alpinejs && npm install -D tailwindcss @tailwindcss/forms autoprefixer browser-sync browser-sync-webpack-plugin laravel-mix last-release-git postcss semantic-release');
+confirm('Execute `composer install` and `npm install`?', true) && run('composer require lukaskleinschmidt/kirby-snippet-controller gearsdigital/enhanced-toolbar-link-dialog diesdasdigital/kirby-meta-knight diverently/laravel-mix-kirby genxbe/kirby3-ray && npm install alpinejs && npm install -D tailwindcss @tailwindcss/forms autoprefixer browser-sync browser-sync-webpack-plugin laravel-mix last-release-git postcss semantic-release');
 confirm('Let this script delete itself?', true) && unlink(__FILE__);
