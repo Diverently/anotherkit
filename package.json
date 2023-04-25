@@ -20,7 +20,7 @@
     "dependencies": {},
     "devDependencies": {
         "last-release-git": "^0.0.3",
-        "semantic-release": "^19.0.5"
+        "semantic-release": "^21.0.1"
     },
     "repository": {
         "type": "git",
