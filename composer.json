@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "getkirby/cms": "^3.9"
+        "getkirby/cms": "^4.1"
     },
     "config": {
         "optimize-autoloader": true,
